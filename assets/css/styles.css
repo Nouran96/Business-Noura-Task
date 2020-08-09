@@ -11,6 +11,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
 }
 
 img {
@@ -28,6 +30,10 @@ img {
 
 /* Navbar Features */
 
+nav {
+    margin-bottom: 10rem;
+}
+
 nav #logo {
     display: block;
     width: 15rem;
@@ -43,4 +49,18 @@ nav ul li a {
 
 nav ul li:hover > a {
     border-bottom: 3px solid #1C8EFA;
+}
+
+/* Header Features */
+
+header .row {
+    margin-right: 2rem;
+}
+
+header p {
+    font-size: 1.8em;
+}
+
+header img {
+    width: 11rem;
 }
