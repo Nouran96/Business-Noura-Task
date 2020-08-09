@@ -58,26 +58,26 @@
 
         <main>
             <div class="row">
-                <div class="col-3">
-                    <div>
-                        <h3>سوق العمل</h3>
-                        <p>اطلع على اخر نماذجنا</p>
+                <div class="col-3 sidebar d-flex flex-column justify-content-between">
+                    <div class="tab">
+                        <p>سوق العمل</p>
+                        <p class="action">اطلع على اخر نماذجنا</p>
                     </div>
-                    <div>
-                        <h3>ورشة عمل بعنوان...</h3>
-                        <p>سجل الآن</p>
+                    <div class="tab active">
+                        <p>ورشة عمل بعنوان...</p>
+                        <p class="action">سجل الآن</p>
                     </div>
-                    <div>
-                        <h3>ورشة عمل بعنوان...</h3>
-                        <p>سجل الآن</p>
+                    <div class="tab">
+                        <p>ورشة عمل بعنوان...</p>
+                        <p class="action">سجل الآن</p>
                     </div>
-                    <div>
-                        <h3>ورشة عمل بعنوان...</h3>
-                        <p>سجل الآن</p>
+                    <div class="tab">
+                        <p>ورشة عمل بعنوان...</p>
+                        <p class="action">سجل الآن</p>
                     </div>
                 </div>
 
-                <div class="col-9 d-flex flex-column">
+                <div class="col-9">
                     <div class="owl-carousel owl-theme">
                         <div class="item"></div>
                         <div class="item"></div>
@@ -97,18 +97,8 @@
 
     <script src="assets/owlcarousel/owl.carousel.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                mouseDrag: false,
-                touchDrag: false,
-                nav: true,
-                navText: ['<span class="fas fa-angle-left"></span>', '<span class="fas fa-angle-right"></span>'],
-                dots: false,
-                items: 1
-            });
-        });
-    </script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

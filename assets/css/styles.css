@@ -72,12 +72,49 @@ header img {
 /* Main Content */
 
 main {
-    padding: 2rem 1rem 1rem;
+    padding: 2rem 1rem 0;
     background: white;
-    box-shadow: 2px -2px 15px 7px #d4d2d2;
+    box-shadow: 3px 13px 15px 7px #d4d2d2;
     border-radius: 10px;
 }
 
+main .tab {
+    margin-bottom: 2rem;
+    position: relative;
+    cursor: pointer;
+    color: #b5b5b5;
+    font-size: 1.4em;
+    min-height: 100px;
+}
+
+main .tab::after {
+    content: '';
+    width: 19%;
+    height: 3px;
+    background-color: #d4d2d2;
+    position: absolute;
+    border-radius: 7px;
+}
+
+main .tab:hover, 
+main .tab.active {
+    color: black;
+    transform: scaleY(1.4);
+    transform: translateX(-10px);
+    font-size: 2em;
+}
+
+main .tab:hover::after, 
+main .tab.active::after {background-color: #1C8EFA;}
+
+main .sidebar {
+    padding: 4rem 3rem;
+}
+
+main .sidebar .action {font-size: .6em;}
+main .sidebar p {margin-bottom: .4rem;}
+
+/* Carousel Content */
 .owl-carousel {
     direction: ltr;
 }
