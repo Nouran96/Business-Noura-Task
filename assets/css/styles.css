@@ -21,7 +21,7 @@ img {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 95%;
 }
 
 .nav-link {
@@ -53,14 +53,75 @@ nav ul li:hover > a {
 
 /* Header Features */
 
+header {
+    margin-bottom: 5rem;
+}
+
 header .row {
     margin-right: 2rem;
 }
 
 header p {
-    font-size: 1.8em;
+    font-size: 1.9em;
 }
 
 header img {
     width: 11rem;
+}
+
+/* Main Content */
+
+main {
+    padding: 2rem 1rem 1rem;
+    background: white;
+    box-shadow: 2px -2px 15px 7px #d4d2d2;
+    border-radius: 10px;
+}
+
+.owl-carousel {
+    direction: ltr;
+}
+
+.item {
+    position: relative;
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(254, 211, 61, 0.9), 
+      rgba(254, 211, 61, 0.9)
+    ),
+    /* bottom, image */
+    url(../images/todo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.owl-prev span, .owl-next span {
+    font-size: 2em;
+    position: absolute;
+    top: 45%;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: .6rem .9rem;
+}
+
+.owl-prev span {left: 5%;}
+.owl-next span {right: 5%;}
+
+.bookmark{ 
+    position: absolute; 
+    height: 55px; 
+    width: 30px; 
+    padding: 0px;
+    -webkit-transform: rotate(0deg) skew(0deg); 
+    transform: rotate(0deg) skew(0deg); 
+    border-left: 15px solid #F3465B; 
+    border-right: 15px solid #F3465B; 
+    border-bottom: 15px solid transparent; 
+    z-index: 1;
+    left: 4%;
+    top: -1%;
 }
