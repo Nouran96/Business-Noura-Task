@@ -1,0 +1,51 @@
+/* General Features */
+
+body {
+    background-image: url('../images/signin-bg.png');
+    background-position: top;
+}
+
+/* Navbar Features */
+
+nav {
+    margin-bottom: 7rem;
+}
+
+/* Main Content */
+
+main .actions,
+main .types {
+    border-radius: 50px;
+    outline: none;
+}
+
+main .actions,
+main .actions button {
+    background-color: white;
+}
+
+main .types {
+    background-color: #219DFA;
+}
+
+main .actions button,
+main .types button {
+    border: 0;
+    padding: .8rem 1.5rem;
+    font-size: 1.4em;
+    border-radius: 50px;
+}
+
+main .types button {
+    background-color: transparent;
+    padding: .3rem 1.5rem;
+    color: white;
+    font-size: 1.2em;
+}
+
+main .actions button.active,
+main .types button.active {
+    border-radius: 50px;
+    background-color: #FED33D;
+    color: black;
+}
