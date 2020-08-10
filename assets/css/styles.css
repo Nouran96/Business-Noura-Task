@@ -55,7 +55,8 @@ nav ul li:last-of-type:hover > a {
     cursor: auto;
 }
 
-nav ul li:hover > a {
+nav ul li:hover > a,
+nav ul li.active > a {
     border-bottom: 3px solid #1C8EFA;
     cursor: pointer;
 }
@@ -178,7 +179,7 @@ main .sidebar p {margin-bottom: .4rem;}
 
 footer {
     direction: ltr;
-    margin-top: 10rem;
+    margin-top: 4rem;
 }
 
 footer .icons a {

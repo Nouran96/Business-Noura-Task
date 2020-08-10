@@ -18,7 +18,8 @@
 
     <div class="container">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html"><img id="logo" src="assets/images/logo.png" alt="Business Nora"></a>
+            <a class="navbar-brand" href="index.html"><img id="logo" src="assets/images/logo.png"
+                    alt="Business Nora"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,15 +27,15 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto d-flex align-items-end">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#" title="البريد"><img src="assets/images/mail.png"> <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="signin.html" title="سجل الآن"><img src="assets/images/signin.png"> <span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="signin.html" title="سجل الآن"><img src="assets/images/signin.png">
+                            <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#"><img src="assets/images/stack.png"> <span
                                 class="sr-only">(current)</span></a>
                     </li>
@@ -50,19 +51,52 @@
                     <button class="col-6" id="signin">تسجيل دخول</button>
                 </div>
 
-                <div class="row types mt-4">
+                <div class="row types mt-4 mb-5">
                     <button class="col-4">رائد أعمال</button>
                     <button class="col-4 active">المرشدين</button>
                     <button class="col-4">المستثمرين</button>
                 </div>
+
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" placeholder="الاسم الأول" class="form-control" name="firstname">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="الاسم الأخير" class="form-control" name="lastname">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" placeholder="الرقم السرى" class="form-control" name="password">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" placeholder="الإيميل" class="form-control" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+                            placeholder="تاريخ الميلاد" class="form-control" name="birthdate">
+                    </div>
+
+                    <select class="form-control custom-select" placeholder="الجنس">
+                        <option disabled selected hidden>الجنس</option>
+                        <option value="female">أنثى</option>
+                        <option value="male">ذكر</option>
+                    </select>
+
+                    <div class="form-group mt-5">
+                        <button class="btn btn-outline-light">تسجيل</button>
+                    </div>
+                </form>
             </div>
         </main>
 
         <footer class="d-flex flex-column">
             <div class="d-flex justify-content-start icons">
                 <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><img src="assets/images/linkedin.png" alt=""></a>
-                <a href="#"><img src="assets/images/youtube.png" alt=""></a>
+                <a href="#"><img src="assets/images/linkedin-white.png" alt="Linkedin"></a>
+                <a href="#"><img src="assets/images/youtube-white.png" alt="Youtube"></a>
             </div>
             <p class="copyright">All rights reserved &copy; Businessnoura 2019</p>
         </footer>
