@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    transition: all .2s ease-in;
 }
 
 body {
@@ -99,8 +100,8 @@ main .tab::after {
 main .tab:hover, 
 main .tab.active {
     color: black;
-    transform: scaleY(1.4);
-    transform: translateX(-10px);
+    /* transform: scaleY(1.4); */
+    /* transform: translateX(-10px); */
     font-size: 2em;
 }
 
@@ -119,20 +120,23 @@ main .sidebar p {margin-bottom: .4rem;}
     direction: ltr;
 }
 
+.first {background: linear-gradient( rgb(245 169 0 / 0.78), rgb(255 212 0 / 78%), rgb(241 180 8 / 78%) ),
+    url(../images/content.jpg);}
+
+.second {background: linear-gradient( rgb(0 155 245 / 78%), rgb(0 173 255 / 78%), rgb(8 144 241 / 78%) ),
+                     url(../images/content.jpg);}
+
+.third {background: linear-gradient( rgb(162 0 245 / 78%), rgb(150 0 138 / 78%), rgb(216 8 241 / 78%) ),
+                    url(../images/content.jpg);}
+
 .item {
     position: relative;
-    background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(254, 211, 61, 0.9), 
-      rgba(254, 211, 61, 0.9)
-    ),
-    /* bottom, image */
-    url(../images/todo.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 600px;
     border-radius: 15px;
+    filter: contrast(150%);
 }
 
 .owl-prev span, .owl-next span {
