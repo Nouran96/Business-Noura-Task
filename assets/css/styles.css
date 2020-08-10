@@ -5,6 +5,11 @@
     transition: all .2s ease-in;
 }
 
+::selection {
+    background-color: #F3465B;
+    color: white;
+}
+
 body {
     padding: 3rem 0;
     font-size: 16px;
@@ -72,11 +77,12 @@ header img {
 
 /* Main Content */
 
-main {
+main .content {
     padding: 2rem 1rem 0;
     background: white;
     box-shadow: 3px 13px 15px 7px #d4d2d2;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 main .tab {
@@ -100,8 +106,6 @@ main .tab::after {
 main .tab:hover, 
 main .tab.active {
     color: black;
-    /* transform: scaleY(1.4); */
-    /* transform: translateX(-10px); */
     font-size: 2em;
 }
 
@@ -165,4 +169,28 @@ main .sidebar p {margin-bottom: .4rem;}
     z-index: 1;
     left: 4%;
     top: -1%;
+}
+
+/* Footer Content */
+
+footer {
+    direction: ltr;
+    margin-top: 10rem;
+}
+
+footer .icons a {
+    margin: 0 .5rem;
+}
+
+footer .icons a:first-of-type {margin: 0 0;}
+
+footer .icons .fa-twitter {
+    color: #1C8EFA;
+    font-size: 1.3em;
+    vertical-align: bottom;
+}
+
+.copyright {
+    text-align: left;
+    font-size: .9em;
 }
