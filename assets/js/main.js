@@ -1,3 +1,6 @@
+/**** 
+ * Control Active tabs with carousels 
+****/
 $('.tab').click(function() {
     // Add active class to the active tab and remove from all other tabs
     $('.tab').removeClass('active');
@@ -9,4 +12,29 @@ $('.tab').click(function() {
     $(`.owl-carousel.${carouselOrder}`).removeClass('d-none');
 });
 
-$('input:valid').next().removeClass('d-none');
+/****
+ * Navigate between signin and signup forms
+ ****/
+$('.form-btns').click(function() {
+
+    $('.form-btns').removeClass('active');
+    $(this).addClass('active');
+
+    if($(this).is('#signup-btn')) {
+        
+        $('#signin-form').addClass('d-none');
+        $('#signup-form').removeClass('d-none');
+    } else {
+        
+        $('#signup-form').addClass('d-none');
+        $('#signin-form').removeClass('d-none');
+    }
+});
+
+/****
+ * Navigate between types buttons
+ ****/
+$('.types button').click(function() {
+    $('.types button').removeClass('active');
+    $(this).addClass('active');
+});

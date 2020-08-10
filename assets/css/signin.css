@@ -65,6 +65,7 @@ main .types button {
     padding: .8rem 1.5rem;
     font-size: 1.4em;
     border-radius: 50px;
+    outline: none;
 }
 
 main .types button:hover {
@@ -90,6 +91,8 @@ main .types button.active {
 }
 
 /* Form Content */
+
+form {min-height: 65vh}
 
 form button.btn {
     padding: .1rem 3.5rem .3rem 3.5rem;

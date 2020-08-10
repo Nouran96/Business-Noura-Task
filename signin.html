@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Noura</title>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         crossorigin="anonymous">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/signin.css">
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/d7b258bb9a.js" crossorigin="anonymous"></script>
 
 </head>
@@ -17,6 +21,8 @@
 <body>
 
     <div class="container">
+
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="index.html"><img id="logo" src="assets/images/logo.png"
                     alt="Business Nora"></a>
@@ -42,13 +48,15 @@
                 </ul>
             </div>
         </nav>
+        <!-- End Navbar -->
 
         <main class="row justify-content-center">
             <div class="col-lg-4 col-md-6">
                 <h3 class="text-center mb-5">يرجى تسجيل الدخول</h3>
+                <!-- Buttons -->
                 <div class="row actions">
-                    <button class="col-6 active" id="signup">مستخدم جديد</button>
-                    <button class="col-6" id="signin">تسجيل دخول</button>
+                    <button class="col-6 active form-btns" id="signup-btn">مستخدم جديد</button>
+                    <button class="col-6 form-btns" id="signin-btn">تسجيل دخول</button>
                 </div>
 
                 <div class="row types mt-4 mb-5">
@@ -56,8 +64,10 @@
                     <button class="col-4 active">المرشدين</button>
                     <button class="col-4">المستثمرين</button>
                 </div>
+                <!-- End Buttons -->
 
-                <form action="">
+                <!-- SignUp Form -->
+                <form action="" id="signup-form">
                     <div class="form-group">
                         <input type="text" placeholder="الاسم الأول" class="form-control" name="firstname" required>
                         <i class="far fa-check-circle"></i>
@@ -97,9 +107,29 @@
                         <button class="btn btn-outline-light">تسجيل</button>
                     </div>
                 </form>
+                <!-- End SignUp Form -->
+
+                <!-- SignIn Form -->
+                <form action="" id="signin-form" class="d-none">
+                    <div class="form-group">
+                        <input type="email" placeholder="الإيميل" class="form-control" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+                        <i class="far fa-check-circle"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" placeholder="الرقم السرى" class="form-control" name="password" required>
+                        <i class="far fa-check-circle"></i>
+                    </div>
+
+                    <div class="form-group mt-5">
+                        <button class="btn btn-outline-light">تسجيل</button>
+                    </div>
+                </form>
+                <!-- End SignIn Form -->
             </div>
         </main>
 
+        <!-- Footer -->
         <footer class="d-flex flex-column">
             <div class="d-flex justify-content-start icons">
                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -108,9 +138,11 @@
             </div>
             <p class="copyright">All rights reserved &copy; Businessnoura 2019</p>
         </footer>
+        <!-- End Footer -->
     </div>
 
 
+    <!-- Bootstrap, jQuery, Popper -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
