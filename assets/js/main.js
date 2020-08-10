@@ -8,3 +8,5 @@ $('.tab').click(function() {
     $('.owl-carousel').addClass('d-none');
     $(`.owl-carousel.${carouselOrder}`).removeClass('d-none');
 });
+
+$('input:valid').next().removeClass('d-none');

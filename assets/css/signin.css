@@ -12,6 +12,11 @@ body {
     border-radius: 0;
     font-size: 1.2em;
     padding: .375rem 1.75rem;
+    position: relative;
+}
+
+input:-webkit-autofill:not(:focus) {
+    -webkit-text-fill-color: #116aab;
 }
 
 .custom-select {color: #116aab;}
@@ -92,6 +97,24 @@ form button.btn {
     font-size: 1.3em;
     display: block;
     margin: auto;
+}
+
+.form-group {position: relative;}
+
+.form-control + i {
+    position: absolute;
+    top: 12%;
+    left: 1.5%;
+    font-size: 2em;
+    color: #0a91f3;
+    visibility: hidden;
+    z-index: 0;
+}
+
+.form-control:valid + i{
+    /* display: block; */
+    visibility: visible;
+    /* background-color: green; */
 }
 
 /* Footer Content */

@@ -59,31 +59,39 @@
 
                 <form action="">
                     <div class="form-group">
-                        <input type="text" placeholder="الاسم الأول" class="form-control" name="firstname">
+                        <input type="text" placeholder="الاسم الأول" class="form-control" name="firstname" required>
+                        <i class="far fa-check-circle"></i>
                     </div>
 
                     <div class="form-group">
-                        <input type="text" placeholder="الاسم الأخير" class="form-control" name="lastname">
+                        <input type="text" placeholder="الاسم الأخير" class="form-control" name="lastname" required>
+                        <i class="far fa-check-circle"></i>
                     </div>
 
                     <div class="form-group">
-                        <input type="password" placeholder="الرقم السرى" class="form-control" name="password">
+                        <input type="password" placeholder="الرقم السرى" class="form-control" name="password" required>
+                        <i class="far fa-check-circle"></i>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" placeholder="الإيميل" class="form-control" name="email">
+                        <input type="email" placeholder="الإيميل" class="form-control" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+                        <i class="far fa-check-circle"></i>
                     </div>
 
                     <div class="form-group">
                         <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
-                            placeholder="تاريخ الميلاد" class="form-control" name="birthdate">
+                            placeholder="تاريخ الميلاد" class="form-control" name="birthdate" required>
+                        <i class="far fa-check-circle"></i>
                     </div>
 
-                    <select class="form-control custom-select" placeholder="الجنس">
-                        <option disabled selected hidden>الجنس</option>
-                        <option value="female">أنثى</option>
-                        <option value="male">ذكر</option>
-                    </select>
+                    <div class="form-group">
+                        <select class="form-control custom-select" name="gender" required>
+                            <option disabled selected hidden value="">الجنس</option>
+                            <option value="female">أنثى</option>
+                            <option value="male">ذكر</option>
+                        </select>
+                        <i class="far fa-check-circle"></i>
+                    </div>
 
                     <div class="form-group mt-5">
                         <button class="btn btn-outline-light">تسجيل</button>
