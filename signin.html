@@ -84,7 +84,8 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="email" placeholder="الإيميل" class="form-control" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+                        <input type="email" placeholder="الإيميل" class="form-control" name="email"
+                            pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
                         <i class="far fa-check-circle"></i>
                     </div>
 
@@ -103,16 +104,20 @@
                         <i class="far fa-check-circle"></i>
                     </div>
 
-                    <div class="form-group mt-5">
+                    <div class="form-group mt-5 d-flex justify-content-center align-items-center">
                         <button class="btn btn-outline-light">تسجيل</button>
+                        <div class="spinner-border text-light mr-3 d-none" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
                     </div>
                 </form>
                 <!-- End SignUp Form -->
 
                 <!-- SignIn Form -->
-                <form action="" id="signin-form" class="d-none">
+                <form id="signin-form" class="d-none">
                     <div class="form-group">
-                        <input type="email" placeholder="الإيميل" class="form-control" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+                        <input type="email" placeholder="الإيميل" class="form-control" name="email"
+                            pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
                         <i class="far fa-check-circle"></i>
                     </div>
 
@@ -121,8 +126,11 @@
                         <i class="far fa-check-circle"></i>
                     </div>
 
-                    <div class="form-group mt-5">
+                    <div class="form-group mt-5 d-flex justify-content-center align-items-center">
                         <button class="btn btn-outline-light">تسجيل</button>
+                        <div class="spinner-border text-light mr-3 d-none" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
                     </div>
                 </form>
                 <!-- End SignIn Form -->
@@ -139,6 +147,32 @@
             <p class="copyright">All rights reserved &copy; Businessnoura 2019</p>
         </footer>
         <!-- End Footer -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content d-flex flex-column">
+                    <div class="d-flex justify-content-center loader mb-5">
+                        <img src="assets/images/loader.png" alt="">
+                    </div>
+
+                    <h3 class="text-center">أهلا بك، سيتم تدشين هذه الخدمة قريبا اضف ايميلك ليصلك إشعارا عند الإطلاق</h3>
+
+                    <form id="modal-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="الإيميل" class="form-control" name="email"
+                                pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+                            <i class="far fa-check-circle"></i>
+                        </div>
+    
+                        <div class="form-group mt-5 d-flex justify-content-center align-items-center">
+                            <button class="btn btn-outline-light">تسجيل</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
 

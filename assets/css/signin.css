@@ -21,20 +21,12 @@ input:-webkit-autofill:not(:focus) {
 
 .custom-select {color: #116aab;}
 
-.dropdown-toggle::after {
-    position: absolute;
-    left: 3%;
-    top: 50%;
-    vertical-align: baseline;
+.spinner-border {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
-.dropdown-menu {
-    width: 100%;
-    text-align: right;
-}
-
-.form-control::-webkit-input-placeholder,
-.dropdown-toggle {color: #116aab;}
+.form-control::-webkit-input-placeholder{color: #116aab;}
 
 /* Navbar Features */
 
@@ -92,14 +84,14 @@ main .types button.active {
 
 /* Form Content */
 
-form {min-height: 65vh}
+form {min-height: 27rem}
 
 form button.btn {
     padding: .1rem 3.5rem .3rem 3.5rem;
     border-radius: 50px;
     font-size: 1.3em;
     display: block;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .form-group {position: relative;}
@@ -115,9 +107,7 @@ form button.btn {
 }
 
 .form-control:valid + i{
-    /* display: block; */
     visibility: visible;
-    /* background-color: green; */
 }
 
 /* Footer Content */
@@ -127,5 +117,39 @@ footer {
 }
 
 footer .icons .fa-twitter {
+    color: white;
+}
+
+/* Modal Content */
+
+/* .loader img {margin-left: 4rem;} */
+
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.modal-content h3 {margin-bottom: 7rem;}
+
+.modal-backdrop {
+    opacity:0.8 !important;
+}
+
+#modal-form {
+    min-height: 0;
+    margin-top: 2rem;
+}
+
+#modal-form .form-control {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+}
+
+#modal-form .form-control::-webkit-input-placeholder,
+#modal-form .form-control + i{
     color: white;
 }

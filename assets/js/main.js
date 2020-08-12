@@ -38,3 +38,20 @@ $('.types button').click(function() {
     $('.types button').removeClass('active');
     $(this).addClass('active');
 });
+
+// Show popup when forms are submitted
+$('#signup-form').submit((e) => submitForm(e));
+$('#signin-form').submit((e) => submitForm(e));
+
+function submitForm(e) {
+    e.preventDefault();
+
+    $('.spinner-border').removeClass('d-none');
+
+    setTimeout(() => {
+        $('.spinner-border').addClass('d-none');
+        $('#exampleModal').modal({
+            backdrop: 'static'
+        });
+    }, 2000);
+}
