@@ -1,3 +1,6 @@
+// new WOW().init();
+AOS.init();
+
 /**** 
  * Control Active tabs with carousels 
 ****/
