@@ -100,7 +100,7 @@ main .tab {
 
 main .tab::after {
     content: '';
-    width: 19%;
+    width: 4rem;
     height: 3px;
     background-color: #d4d2d2;
     position: absolute;
@@ -197,4 +197,44 @@ footer .icons .fa-twitter {
 .copyright {
     text-align: left;
     font-size: .9em;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1549px) {
+
+    main .tab:hover, 
+    main .tab.active {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    header .row {margin-right: 0;}
+    main .sidebar {padding: 2rem 3rem;}
+    main .tab {margin-bottom: 0;}
+}
+
+@media screen and (max-width: 927px) {
+
+    main .sidebar {width: 100%;}
+    main .tab {width: 50%;}
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {margin-bottom: 7rem;}
+    header p {text-align: center;}
+}
+
+@media screen and (max-width: 648px) {
+    
+    nav {margin-bottom: 5rem;}
+    #nav-content {margin-top: 1rem;}
+    main .tab {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    main .sidebar {padding: 0 3rem;}
 }

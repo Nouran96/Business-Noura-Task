@@ -24,15 +24,11 @@
 
     <div class="container">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html"><img id="logo" src="assets/images/logo.png" alt="Business Nora"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar justify-content-md-between justify-content-center">
+            <a class="navbar-brand d-md-block" href="index.html"><img id="logo" src="assets/images/logo.png" alt="Business Nora"></a>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto d-flex align-items-end">
+            <div id="nav-content">
+                <ul class="navbar-nav mr-auto d-flex align-items-end flex-row">
                     <li class="nav-item">
                         <a class="nav-link" href="#" title="البريد"><img src="assets/images/mail.png"> <span
                                 class="sr-only">(current)</span></a>
@@ -53,10 +49,10 @@
         <!-- Header -->
         <header>
             <div class="row">
-                <div class="col-md-12 col-lg-7">
+                <div class="col-md-12 col-lg-9 col-xl-7">
                     <div class="row align-items-center">
-                        <div class="col-3"><img class="float-right d-block" src="assets/images/loader.png"></div>
-                        <p class="col-9">منصة بزنس نورة، تجربة تعــلّم رائعة <br>تستند إلى خبـــرات حقيقـة بكل ما يخص
+                        <div class="col-xl-3 col-md-4 d-flex justify-content-center"><img src="assets/images/loader.png"></div>
+                        <p class="col-xl-9 col-md-8">منصة بزنس نورة، تجربة تعــلّم رائعة <br>تستند إلى خبـــرات حقيقـة بكل ما يخص
                             ريادة الأعمال</p>
                     </div>
                 </div>
@@ -65,9 +61,9 @@
         <!-- End Header -->
 
         <main>
-            <div class="row content">
+            <div class="row flex-lg-row flex-column-reverse content">
                 <!-- Sidebar -->
-                <div class="col-3 sidebar d-flex flex-column justify-content-between">
+                <div class="col-xl-3 col-lg-4 col-12 sidebar d-flex flex-lg-column flex-wrap justify-content-between">
                     <div class="tab one">
                         <p>سوق العمل</p>
                         <p class="action">اطلع على اخر نماذجنا</p>
@@ -88,7 +84,7 @@
                 <!-- End Sidebar -->
 
                 <!-- Carousels -->
-                <div class="col-9">
+                <div class="col-xl-9 col-lg-8">
                     <div class="owl-carousel owl-theme one d-none">
                         <div class="item first"></div>
                         <div class="item second"></div>

@@ -26,7 +26,8 @@ input:-webkit-autofill:not(:focus) {
     height: 1.5rem;
 }
 
-.form-control::-webkit-input-placeholder{color: #116aab;}
+.form-control::-webkit-input-placeholder,
+.form-control::placeholder{color: #116aab;}
 
 /* Navbar Features */
 
@@ -150,6 +151,7 @@ footer .icons .fa-twitter {
 }
 
 #modal-form .form-control::-webkit-input-placeholder,
+#modal-form .form-control::placeholder,
 #modal-form .form-control + i{
     color: white;
 }
