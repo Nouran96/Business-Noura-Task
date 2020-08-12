@@ -148,7 +148,7 @@
         </footer>
         <!-- End Footer -->
 
-        <!-- Modal -->
+        <!-- Main Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -167,9 +167,24 @@
                         </div>
     
                         <div class="form-group mt-5 d-flex justify-content-center align-items-center">
-                            <button class="btn btn-outline-light">تسجيل</button>
+                            <button class="btn btn-outline-light ml-2" type="submit">تسجيل</button>
+                            <button class="btn btn-outline-light" type="button" onclick="closeMainPopup()">اغلاق</button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Main Modal -->
+
+        <div class="modal fade" id="done-popup" tabindex="-1" role="dialog" aria-labelledby="done-popuplabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content d-flex flex-column">
+                    <div class="d-flex justify-content-center done mb-4">
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-center">تم التسجيل بنجاح</h3>
                 </div>
             </div>
         </div>

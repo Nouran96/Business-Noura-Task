@@ -42,6 +42,7 @@ $('.types button').click(function() {
 // Show popup when forms are submitted
 $('#signup-form').submit((e) => submitForm(e));
 $('#signin-form').submit((e) => submitForm(e));
+$('#modal-form').submit((e) => showDonePopup(e));
 
 function submitForm(e) {
     e.preventDefault();
@@ -54,4 +55,16 @@ function submitForm(e) {
             backdrop: 'static'
         });
     }, 2000);
+}
+
+function closeMainPopup() {
+    $('#exampleModal').modal('hide');
+}
+
+function showDonePopup(e) {
+
+    e.preventDefault();
+
+    closeMainPopup();
+    $('#done-popup').modal();
 }

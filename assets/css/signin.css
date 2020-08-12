@@ -153,3 +153,8 @@ footer .icons .fa-twitter {
 #modal-form .form-control + i{
     color: white;
 }
+
+.done i {
+    color: #FED33D;
+    font-size: 5em;
+}
