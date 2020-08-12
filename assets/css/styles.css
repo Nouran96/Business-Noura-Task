@@ -229,7 +229,8 @@ footer .icons .fa-twitter {
 }
 
 @media screen and (max-width: 648px) {
-    
+
+    body {background-position: -56rem 8rem !important;}
     nav {margin-bottom: 5rem;}
     #nav-content {margin-top: 1rem;}
     main .tab {
@@ -237,4 +238,9 @@ footer .icons .fa-twitter {
         margin-bottom: 1rem;
     }
     main .sidebar {padding: 0 3rem;}
+}
+
+@media screen and (max-width: 516px) {
+
+    body {background-position: -59rem 8rem !important;}
 }
