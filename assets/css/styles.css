@@ -238,6 +238,8 @@ footer .icons .fa-twitter {
         margin-bottom: 1rem;
     }
     main .sidebar {padding: 0 3rem;}
+
+    .bookmark {left: 8%;}
 }
 
 @media screen and (max-width: 516px) {

@@ -1,4 +1,4 @@
-// new WOW().init();
+// Animate On Scroll Initiation
 AOS.init();
 
 /**** 
