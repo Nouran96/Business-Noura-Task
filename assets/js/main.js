@@ -4,7 +4,7 @@ AOS.init();
 /**** 
  * Control Active tabs with carousels 
 ****/
-$('.tab').click(function() {
+$('.tab').click(function(e) {
     // Add active class to the active tab and remove from all other tabs
     $('.tab').removeClass('active');
     $(this).addClass('active');
@@ -14,6 +14,11 @@ $('.tab').click(function() {
     $('.owl-carousel').addClass('d-none');
     $(`.owl-carousel.${carouselOrder}`).removeClass('d-none');
 });
+
+// Don't change carousel with navigation to sign up page
+$('.tab a').click(function(e) {
+    e.stopPropagation();
+})
 
 /****
  * Navigate between signin and signup forms
